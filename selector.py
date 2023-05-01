@@ -3,6 +3,8 @@
 
 import random
 
-l = random.sample(range(0, 100), 6)
+n = int(input('How many time do you wanna get random numbers?: '))
 
-print(l)
+for i in range(n):
+    l = random.sample(range(0, 100), 6)
+    print(l)
