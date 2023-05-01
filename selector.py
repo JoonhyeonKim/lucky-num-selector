@@ -3,9 +3,9 @@
 
 import random
 
-n = int(input('How many time do you wanna get random numbers?: '))
+def get_lucky_nums():
+    return random.sample(range(1, 45+1), k=6)
 
-for i in range(n):
-    l = random.sample(range(6, 45), 6)
-    m = sorted(l)
-    print(m)
+if __name__='__main__':
+    print(get_lucky_nums())
+
